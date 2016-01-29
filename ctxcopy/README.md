@@ -70,4 +70,3 @@ ctxcopy is a Golang package which provides helper functions for performing conte
 * <https://godoc.org/golang.org/x/net/context>
 * <http://blog.golang.org/context>
 * <https://github.com/golang/net/tree/master/context>
-* [ctxdownload](https://github.com/northbright/ctx/ctxdownload)

@@ -61,5 +61,3 @@ ctxdownload is a Golang package which provides helper functions for performing c
 * <https://godoc.org/golang.org/x/net/context>
 * <http://blog.golang.org/context>
 * <https://github.com/golang/net/tree/master/context>
-* [ctxcopy](https://github.com/northbright/ctx/ctxcopy)
-
