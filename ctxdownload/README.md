@@ -18,7 +18,7 @@ ctxdownload is a Golang package which provides helper functions for performing c
     // Run "go test -c && ./ctxdownload.test"
     func ExampleDownload() {
         // Download a zip file to test ctxdownload.Download().
-        url := "https://github.com/northbright/guihua/archive/master.zip"
+        url := "https://github.com/northbright/plants/archive/master.zip"
         outDir := "./download"
         fileName := "" // If file name is empty, it will try to detect file name in response Header in Download().
 

@@ -18,7 +18,7 @@ ctxcopy is a Golang package which provides helper functions for performing conte
     // Run "go test -c && ./ctxcopy.test"
     func ExampleCopy() {
         // Download a zip from web server to local storage to test Copy().
-        url := "https://github.com/northbright/guihua/archive/master.zip"
+        url := "https://github.com/northbright/plants/archive/master.zip"
         totalTimeoutSeconds := 10 // to make download successful, set it to 300 or more.
         totalTimeout := time.Duration(time.Duration(totalTimeoutSeconds) * time.Second)
 
