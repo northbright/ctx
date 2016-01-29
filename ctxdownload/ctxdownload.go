@@ -3,7 +3,7 @@ package ctxdownload
 import (
 	"compress/gzip"
 	"github.com/northbright/ctx/ctxcopy"
-	"github.com/northbright/httphelper"
+	"github.com/northbright/http/getdownloadfilename"
 	"github.com/northbright/pathhelper"
 	"golang.org/x/net/context"
 	"golang.org/x/net/context/ctxhttp"
@@ -97,7 +97,7 @@ func Download(ctx context.Context, url, outDir, fileName string, buf []byte, req
 
 	// Try to get file name in response header
 	if fileName == "" {
-		if fileName, err = httphelper.GetFileName(url, resp); err != nil {
+		if fileName, err = getdownloadfilename.GetFileName(url, resp); err != nil {
 			return "", err
 		}
 	}
