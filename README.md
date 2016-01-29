@@ -1,5 +1,5 @@
 # ctx
-This repository holds packages to provide Google's Context-aware helper functions.
+This repository holds Golang packages to provide Google's Context-aware helper functions.
 
 ## [Google's Context](https://godoc.org/golang.org/x/net/context)
 *  Context type, which carries deadlines, cancelation signals, and other request-scoped values across API boundaries and between processes.
