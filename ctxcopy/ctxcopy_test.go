@@ -10,7 +10,8 @@ import (
 	"time"
 )
 
-// Run "go test -c && ./ctxcopy.test"
+// 1. Run "go get github.com/northbright/pathhelper" to install pathhelper.
+// 2. Run "go test -c && ./ctxcopy.test"
 func ExampleCopy() {
 	// Download a zip from web server to local storage to test Copy().
 	url := "https://github.com/northbright/plants/archive/master.zip"
