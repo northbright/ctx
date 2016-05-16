@@ -2,16 +2,17 @@ package ctxdownload
 
 import (
 	"compress/gzip"
-	"github.com/northbright/ctx/ctxcopy"
-	"github.com/northbright/http/getdownloadfilename"
-	"github.com/northbright/pathhelper"
-	"golang.org/x/net/context"
-	"golang.org/x/net/context/ctxhttp"
 	"io"
 	"net/http"
 	"os"
 	"path"
 	"time"
+
+	"github.com/northbright/ctx/ctxcopy"
+	"github.com/northbright/http/getdownloadfilename"
+	"github.com/northbright/pathhelper"
+	"golang.org/x/net/context"
+	"golang.org/x/net/context/ctxhttp"
 )
 
 const (
