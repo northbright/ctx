@@ -2,10 +2,11 @@ package ctxdownload_test
 
 import (
 	"fmt"
-	"github.com/northbright/ctx/ctxdownload"
 	"golang.org/x/net/context"
 	"os"
 	"time"
+
+	"github.com/northbright/ctx/ctxdownload"
 )
 
 // Run "go test -c && ./ctxdownload.test"
