@@ -10,7 +10,12 @@ go:
 before_install:
 
 install:
+  - go get github.com/northbright/ctx/ctxcopy
   - go get github.com/northbright/httputil
+  - go get github.com/northbright/pathhelper
+  - go get golang.org/x/net/context
+  - go get golang.org/x/net/context/ctxhttp
+
 
 script:
   - cd ctxcopy && go test -v
