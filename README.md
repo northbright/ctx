@@ -1,4 +1,7 @@
 # ctx
+
+[![Build Status](https://travis-ci.org/northbright/ctx.svg?branch=master)](https://travis-ci.org/northbright/ctx)
+
 This repository holds [Golang](http://golang.org) packages to provide Google's Context-aware helper functions.
 
 ## [Google's Context](https://godoc.org/golang.org/x/net/context)
