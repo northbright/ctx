@@ -61,6 +61,10 @@ ctxcopy is a [Golang](http://golang.org) package which provides helper functions
         // Output:
     }
 
+## Go Version Requirement
+* Go 1.5 and later
+* See [Fix the *http.Request has no field or method Cancel Issue](https://github.com/northbright/Notes/blob/master/Golang/http/fix-the-http-request-has-no-field-or-method-cancel-issue.md) 
+
 ## Documentation
 * [API References](https://godoc.org/github.com/northbright/ctx/ctxcopy)
 
