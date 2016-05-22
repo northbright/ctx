@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/northbright/ctx/ctxcopy"
-	"github.com/northbright/http/getdownloadfilename"
+	"github.com/northbright/httputil"
 	"github.com/northbright/pathhelper"
 	"golang.org/x/net/context"
 	"golang.org/x/net/context/ctxhttp"
@@ -98,7 +98,7 @@ func Download(ctx context.Context, url, outDir, fileName string, buf []byte, req
 
 	// Try to get file name in response header
 	if fileName == "" {
-		if fileName, err = getdownloadfilename.GetFileName(url, resp); err != nil {
+		if fileName, err = httputil.GetFileName(url); err != nil {
 			return "", err
 		}
 	}
