@@ -2,8 +2,9 @@ package ctxcopy
 
 import (
 	"errors"
-	"golang.org/x/net/context"
 	"io"
+
+	"golang.org/x/net/context"
 )
 
 const (
