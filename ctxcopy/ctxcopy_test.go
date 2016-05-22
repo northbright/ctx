@@ -2,12 +2,13 @@ package ctxcopy_test
 
 import (
 	"fmt"
-	"github.com/northbright/ctx/ctxcopy"
-	"github.com/northbright/pathhelper"
-	"golang.org/x/net/context"
 	"net/http"
 	"os"
 	"time"
+
+	"github.com/northbright/ctx/ctxcopy"
+	"github.com/northbright/pathhelper"
+	"golang.org/x/net/context"
 )
 
 // 1. Run "go get github.com/northbright/pathhelper" to install pathhelper.
