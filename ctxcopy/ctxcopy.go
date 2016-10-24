@@ -34,10 +34,10 @@ func copyWithCancelation(dst io.Writer, src io.Reader, buf []byte, cancel *bool)
 		n, err := src.Read(buf)
 		if err != nil && err != io.EOF {
 			return err
-		} else {
-			if n == 0 {
-				break
-			}
+		}
+
+		if n == 0 {
+			break
 		}
 
 		if _, err := dst.Write(buf[:n]); err != nil {
