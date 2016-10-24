@@ -16,8 +16,8 @@ import (
 )
 
 const (
-	// DefRequestTimeoutSeconds is default HTTP request timeout(seconds). It's NOT download timeout.
-	DefRequestTimeoutSeconds int = 10
+	// defRequestTimeoutSeconds is default HTTP request timeout(seconds). It's NOT download timeout.
+	defRequestTimeoutSeconds int = 10
 )
 
 // Download downloads the file from HTTP server.
@@ -36,7 +36,7 @@ const (
 //     buf:
 //       Buffer(length should >= 0).
 //     requestTimeoutSeconds:
-//       HTTP request timeout. It's NOT download timeout. Default value(DefRequestTimeoutSeconds) is 10 seconds.
+//       HTTP request timeout. It's NOT download timeout. Default value(defRequestTimeoutSeconds) is 10 seconds.
 //
 //   Return:
 //     downloadedFileName: Absolute downloaded file path.
@@ -60,7 +60,7 @@ func Download(ctx context.Context, url, outDir, fileName string, buf []byte, req
 
 	// Check request timeout
 	if requestTimeoutSeconds <= 0 {
-		requestTimeoutSeconds = DefRequestTimeoutSeconds
+		requestTimeoutSeconds = defRequestTimeoutSeconds
 	}
 
 	// Derive new context with request timeout.
