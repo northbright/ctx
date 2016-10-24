@@ -16,11 +16,11 @@ import (
 )
 
 const (
-	// Default HTTP request timeout(seconds). It's NOT download timeout.
+	// DefRequestTimeoutSeconds is default HTTP request timeout(seconds). It's NOT download timeout.
 	DefRequestTimeoutSeconds int = 10
 )
 
-// Download() download the file from HTTP server.
+// Download downloads the file from HTTP server.
 //
 //   Params:
 //     ctx:
