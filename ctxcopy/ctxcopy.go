@@ -8,13 +8,13 @@ import (
 )
 
 const (
-	// Zero buffer length error string.
+	// ZeroBufferLenError is error message of buffer length.
 	ZeroBufferLenError string = "Buffer length is 0."
-	// Copy canceled string.
+	// CanceledStr is the message of copy operation canceled.
 	CanceledStr string = "Copy operation is canceled."
 )
 
-// copyWithCancelation() reads bytes to buffer from source and write to destination from buffer with cancelation signal.
+// copyWithCancelation reads bytes to buffer from source and write to destination from buffer with cancelation signal.
 //
 //   Params:
 //     dst: Destination.
@@ -47,7 +47,7 @@ func copyWithCancelation(dst io.Writer, src io.Reader, buf []byte, cancel *bool)
 	return nil
 }
 
-// Copy() reads bytes to buffer from source and write to destination from buffer with cancelation signal.
+// Copy reads bytes to buffer from source and write to destination from buffer with cancelation signal.
 //
 //   Params:
 //     ctx:
