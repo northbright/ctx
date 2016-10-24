@@ -1,7 +1,7 @@
 package ctxcopy
 
 import (
-	"errors"
+	"fmt"
 	"io"
 
 	"golang.org/x/net/context"
@@ -23,12 +23,12 @@ const (
 //     cancel: cancelation flag. It'll stop copy while the cancelation signal is set to true.
 func copyWithCancelation(dst io.Writer, src io.Reader, buf []byte, cancel *bool) (err error) {
 	if len(buf) == 0 {
-		return errors.New(zeroBufferLenError)
+		return fmt.Errorf(zeroBufferLenError)
 	}
 
 	for {
 		if cancel != nil && (*cancel) {
-			return errors.New(canceledStr)
+			return fmt.Errorf(canceledStr)
 		}
 
 		n, err := src.Read(buf)
