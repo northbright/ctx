@@ -1,5 +1,7 @@
 # ctxdownload
 
+Update: this repo is no longer maintained. Use [iocopy](https://github.com/northbright/iocopy) instead.
+
 ctxdownload is a [Golang](http://golang.org) package which provides helper functions for performing context-aware download task.
 
 ## [Google's Context](https://godoc.org/golang.org/x/net/context)

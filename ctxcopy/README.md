@@ -1,5 +1,7 @@
 # ctxcopy
 
+Update: this repo is no longer maintained. Use [iocopy](https://github.com/northbright/iocopy) instead.
+
 ctxcopy is a [Golang](http://golang.org) package which provides helper functions for performing context-aware copy task.
 
 ## [Google's Context](https://godoc.org/golang.org/x/net/context)
